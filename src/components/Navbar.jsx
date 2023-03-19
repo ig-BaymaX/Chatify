@@ -1,5 +1,6 @@
 import React from "react";
 import SignIn from "./SignIn";
+import LogOut from "./LogOut";
 // import Icon from "../assets/logo.png";
 import { auth } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -15,7 +16,7 @@ const Navbar = () => {
   return (
     <div className={style.nav}>
       <h1 className={style.heading}>Chatify</h1>
-      <SignIn />
+      {user ? <LogOut /> : <SignIn />}
     </div>
   );
 };
