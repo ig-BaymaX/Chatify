@@ -1,8 +1,9 @@
 import React from "react";
+import { FiLogOut } from "react-icons/fi";
 import { auth } from "../firebase";
 
 const style = {
-  button: `bg-blue-400 px-4 py-2 hover:bg-blue-800 rounded-md text-white font-semibold`,
+  button: `flex items-center bg-red-800 px-4 py-2 hover:bg-blue-600 rounded-md text-white font-semibold`,
 };
 
 const LogOut = () => {
@@ -11,7 +12,8 @@ const LogOut = () => {
   };
   return (
     <button onClick={() => auth.signOut()} className={style.button}>
-      Logout
+      Logout &nbsp;
+      {<FiLogOut />}
     </button>
   );
 };
