@@ -16,7 +16,7 @@ const googleSignIn = () => {
 const Signin = () => {
   return (
     <div className={style.wrapper}>
-      <GoogleButton onClick={googleSignIn} />
+      <GoogleButton onClick={googleSignIn} className="font-semibold" />
     </div>
   );
 };
