@@ -15,7 +15,7 @@ const Navbar = () => {
   console.log(user);
   return (
     <div className={style.nav}>
-      <h1 className={style.heading}>Chatify</h1>
+      <h1 className={style.heading}>CHAT App</h1>
       {user ? <LogOut /> : <SignIn />}
     </div>
   );
