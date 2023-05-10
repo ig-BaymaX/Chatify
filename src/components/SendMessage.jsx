@@ -9,7 +9,7 @@ const style = {
 const SendMessage = () => {
   return (
     <form className={style.form}>
-      <input className={style.input} type="text" placeholder="Message" />
+      <input className={style.input} type="text" placeholder="Type a message" />
       <button className={style.button} type="submit">
         Send &nbsp; {<AiOutlineSend />}
       </button>
