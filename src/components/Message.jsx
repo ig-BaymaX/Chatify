@@ -10,7 +10,7 @@ const Message = ({ message }) => {
   return (
     <div>
       <div className={style.message}>
-        <p className={style.name}>Dave</p>
+        <p className={style.name}>Hari</p>
         <p>{message.text}</p>
       </div>
     </div>
