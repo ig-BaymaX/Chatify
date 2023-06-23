@@ -23,7 +23,7 @@ const SendMessage = ({ scroll }) => {
       text: input,
       name: displayName,
       uid,
-      timestamp: serverTimestamp,
+      timestamp: serverTimestamp(),
     });
     setInput("");
     scroll.current.scrollIntoView({ behavior: "smooth" });
