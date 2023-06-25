@@ -7,7 +7,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 
 const style = {
   appContainer: `max-w-[100%] mx-auto text-center`,
-  sectionContainer: `flex flex-col h-[95vh] rounded-md bg-gray-300 mt-10 shadow-xl border relative`,
+  sectionContainer: `flex flex-col h-[100%] rounded-md bg-gray-300 shadow-xl`,
 };
 
 function App() {

@@ -5,7 +5,7 @@ import { auth } from "../firebase";
 import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 
 const style = {
-  wrapper: `flex justify-center`,
+  wrapper: `flex flex-col justify-center`,
 };
 
 const googleSignIn = () => {
