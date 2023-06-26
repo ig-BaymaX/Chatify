@@ -20,7 +20,7 @@ const Navbar = () => {
       <img
         src={Background}
         alt="background"
-        className="fixed inset-0 object-cover blur-[0px] brightness-100 w-full h-full"
+        className="fixed inset-0 object-cover blur-[0px] brightness-50 w-full h-full"
       />
 
       <nav
@@ -29,7 +29,9 @@ const Navbar = () => {
       >
         <div className={user ? style.nav1 : style.nav2}>
           <div className={user ? style.heading1 : style.heading2}>
-            <h1>Chatify</h1>
+            <h1 class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-400">
+              JetChat
+            </h1>
           </div>
           {user ? <LogOut /> : <SignIn />}
         </div>

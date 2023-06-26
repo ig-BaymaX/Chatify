@@ -4,7 +4,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { auth } from "../firebase";
 
 const style = {
-  button: `flex items-center bg-red-800 px-4 py-2 hover:bg-blue-600 rounded-md text-white font-semibold`,
+  button: `ml-2 flex items-center bg-green-800 px-4 py-2 hover:bg-blue-800 rounded-md text-white font-semibold`,
 };
 
 const LogOut = () => {
@@ -26,15 +26,9 @@ const LogOut = () => {
   return (
     <button onClick={signOut} className={style.button}>
       {loading ? (
-        <>
-          Logging out.. &nbsp;
-          <AiOutlineLoading3Quarters className="animate-spin text-red-600" />
-        </>
+        <AiOutlineLoading3Quarters className="animate-spin text-green-300" />
       ) : (
-        <>
-          Logout &nbsp;
-          <FiLogOut />
-        </>
+        <FiLogOut />
       )}
     </button>
   );

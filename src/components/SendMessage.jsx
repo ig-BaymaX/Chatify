@@ -5,8 +5,8 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 
 const style = {
   form: `h-14 w-full max-w-[100%] flex rounded-lg text-xl absolute bottom-0`,
-  input: `w-full text-xl p-3 bg-gray-900 text-white outline-none border-none`,
-  button: `flex items-center px-4 w-[125px] rounded-lg font-semibold bg-green-500`,
+  input: `w-full text-xl p-3 text-white bg-gradient-to-r from-[#172154] to-[#14991f] rounded-lg opacity-75`,
+  button: `ml-2 flex items-center px-4 rounded-full font-semibold opacity-80 bg-green-500`,
 };
 
 const SendMessage = ({ scroll }) => {
@@ -39,10 +39,11 @@ const SendMessage = ({ scroll }) => {
         placeholder="Type a message"
       />
       <button className={style.button} type="submit">
-        Send &nbsp; {<AiOutlineSend />}
+        {<AiOutlineSend />}
       </button>
     </form>
   );
+  setInput("");
 };
 
 export default SendMessage;
