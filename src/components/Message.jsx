@@ -12,7 +12,7 @@ const Message = ({ message }) => {
     message.uid === auth.currentUser.uid ? style.sent : style.received;
 
   return (
-    <div>
+    <div className="my-18">
       <div className={`${style.message} ${messageClass}`}>
         <p className={style.name}>{message.name}</p>
         <p>{message.text}</p>

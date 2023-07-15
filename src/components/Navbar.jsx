@@ -16,27 +16,32 @@ const Navbar = () => {
   const [user] = useAuthState(auth);
   console.log(user);
   return (
-    <div style={{ position: "fixed" }}>
-      <img
-        src={Background}
-        alt="background"
-        className="fixed inset-0 object-cover blur-[0px] brightness-50 w-full h-full"
-      />
+    <html>
+      <head>
+        <title>My Title</title>
+      </head>
+      <div style={{ position: "fixed" }}>
+        <img
+          src={Background}
+          alt="background"
+          className="fixed inset-0 object-cover blur-[0px] brightness-50 w-full h-full"
+        />
 
-      <nav
-        className="static flex flex-col justify-center items-center"
-        style={{ backdropFilter: "blur(3px)" }}
-      >
-        <div className={user ? style.nav1 : style.nav2}>
-          <div className={user ? style.heading1 : style.heading2}>
-            <h1 class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-400">
-              JetChat
-            </h1>
+        <nav
+          className="static flex flex-col justify-center items-center"
+          style={{ backdropFilter: "blur(3px)" }}
+        >
+          <div className={user ? style.nav1 : style.nav2}>
+            <div className={user ? style.heading1 : style.heading2}>
+              <h1 class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-400">
+                ChatROOM
+              </h1>
+            </div>
+            {user ? <LogOut /> : <SignIn />}
           </div>
-          {user ? <LogOut /> : <SignIn />}
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
+    </html>
   );
 };
 
